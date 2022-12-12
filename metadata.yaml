@@ -1,5 +1,5 @@
 homepage: "https://www.demirjasarevic.com/"
 documentation: "https://github.com/demirj/gtm-server-id-generator-template/blob/main/README.md"
 versions:
-  - sha: 034bd77a0fcc364e5432b4e78cc3b4f32c2532ed
+  - sha: 6d5387ed0841b246b882dd919b2054325f978f45
     changeNotes: Initial release.
