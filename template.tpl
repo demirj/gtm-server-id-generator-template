@@ -14,6 +14,7 @@ ___INFO___
   "version": 1,
   "securityGroups": [],
   "displayName": "Unique ID Generator",
+  "categories": ["TAG_MANAGEMENT", "Marketing", "ANALYTICS"],
   "description": "Generates a random ID based on different options, which you can use e.g. for the Client ID in Server Tags.",
   "containerContexts": [
     "SERVER"
