@@ -15,7 +15,7 @@ ___INFO___
   "securityGroups": [],
   "displayName": "Unique ID Generator",
   "categories": ["TAG_MANAGEMENT", "Marketing", "ANALYTICS"],
-  "description": "Generates a random ID based on different options, which you can use e.g. for the Client ID in Server Tags.",
+  "description": "Generates a random ID based on different options.",
   "containerContexts": [
     "SERVER"
   ]
@@ -37,7 +37,7 @@ ___TEMPLATE_PARAMETERS___
       },
       {
         "value": "custom",
-        "displayValue": "Customize value for Client ID."
+        "displayValue": "Customize value for ID."
       }
     ],
     "simpleValueType": true,
@@ -184,16 +184,16 @@ const characterLength = data.characterLength || 32;
 const randomIdGenerator = () => {
   
   const charactersArr = characters.split('');
-  let clientIdPlain = '';
+  let idPlain = '';
   const indices = separatorIndices() || [8,12,16,20];
   
   for (let i = 0; i < characterLength; i++) {
-    clientIdPlain += randomElement(charactersArr);
+    idPlain += randomElement(charactersArr);
   }
   
-  var clientIdCustom = clientIdPlain.split('');
-  indices.reverse().forEach(i => clientIdCustom.splice(i,0,separator));
-  return clientIdCustom.join('');
+  var idCustom = idPlain.split('');
+  indices.reverse().forEach(i => idCustom.splice(i,0,separator));
+  return idCustom.join('');
   
 };
 
